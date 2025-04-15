@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,10 +8,10 @@ import static com.codeborne.selenide.Condition.text;
 
 public class SimpleJUnitTest {
 
-    String url;
+    static String url;
 
-    @BeforeEach
-    void befoerEach() {
+    @BeforeAll
+    static void befoerEach() {
         url = "ya.ru";
     }
 
