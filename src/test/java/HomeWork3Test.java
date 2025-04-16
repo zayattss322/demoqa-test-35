@@ -43,8 +43,8 @@ public class HomeWork3Test {
 
 
         $("#subjectsInput").setValue(myFavouriteSubject).pressEnter();
-        $("label[for='hobbies-checkbox-1']").click();
-        $("label[for='hobbies-checkbox-3']").click();
+        $("#hobbiesWrapper").$(byText("Sports")).click();
+        $("#hobbiesWrapper").$(byText("Music")).click();
 
         // Загрузка файла
         $("#uploadPicture").uploadFromClasspath(imagePath);
@@ -54,9 +54,9 @@ public class HomeWork3Test {
 
         // Штат и город
         $("#state").click();
-        $(byText("NCR")).click();
+        $("#react-select-3-input").setValue("NCR").pressEnter();
         $("#city").click();
-        $(byText("Delhi")).click();
+        $("#react-select-4-input").setValue("Delhi").pressEnter();
 
         // Отправка формы
         $("#submit").click();
