@@ -14,7 +14,7 @@ public class HomeWork3Test {
     public static String userSex = "Male" ;
     public static String phoneNumber = "4815162342" ;
     public static String imagePath = "dota-shadow-fiend.gif" ;
-    //public static String myFavouriteGame = "Dota" ;
+    public static String myFavouriteSubject = "Chemistry" ;
     public static String myAddress = "only Middle st." ;
 
     @BeforeAll
@@ -44,7 +44,7 @@ public class HomeWork3Test {
         $(".react-datepicker__day--008").click();
 
 
-//      $("#subjectsInput").setValue(myFavouriteGame).pressEnter();
+        $("#subjectsInput").setValue(myFavouriteSubject).pressEnter();
         $("label[for='hobbies-checkbox-1']").click();
         $("label[for='hobbies-checkbox-3']").click();
 
@@ -71,7 +71,7 @@ public class HomeWork3Test {
                 text(userSex),
                 text(phoneNumber),
                 text("08 May,1991"),
-//              text(myFavouriteGame),
+                text(myFavouriteSubject),
                 text("Sports, Music"),
                 text(imagePath),
                 text(myAddress),
